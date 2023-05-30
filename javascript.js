@@ -2,9 +2,6 @@
 document.getElementById("displayNone").style.visibility = "hidden"
 
 
-
-
-
 //Yes to the "currently hiring" question
 document.querySelector("#yesHiring").addEventListener("click", yesHiring)
 
@@ -37,7 +34,7 @@ function noHiring(){
         document.querySelector("#yesFutureHiring").style.visibility = "hidden"
         }
         
-    //if no not hiring in future is selected, displays a message
+    //if not hiring in future is selected, displays a message
     document.getElementById("noFutureBtn").addEventListener("click", noFutureHiring)
     function noFutureHiring(){
         document.getElementById("yesFutureBtn").style.visibility ="hidden"
