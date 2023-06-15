@@ -4,6 +4,7 @@ document.getElementById("displayNone").style.visibility = "hidden"
 
 //Yes to the "currently hiring" question
 document.getElementById("yesHiring").addEventListener("click", yesHiring)
+
 function yesHiring(){
     document.querySelector(".software").style.visibility = "visible"
     document.querySelector("#other").style.visibility = "visible"
@@ -12,6 +13,7 @@ function yesHiring(){
 
 //Yes to frontend hiring
 document.getElementById("frontendButtonYes").addEventListener("click", frontendYesHiring)
+
 function frontendYesHiring(){
     document.getElementById("backendPosition").style.visibility = "hidden"
     document.querySelector("#other").style.visibility = "hidden"
@@ -22,17 +24,21 @@ function frontendYesHiring(){
 
 //Yes to full-Stack
 document.getElementById("fullStackYes").addEventListener("click", fullStackYesList)
+
 function fullStackYesList(){
     document.querySelector(".fullStackFront").style.visibility="visible"
     document.querySelector("#strictlyFrontYes").style.visibility = "hidden"
     document.querySelector(".strictlyFront").style.visibility = "hidden"
+    document.querySelector(".likeWhatYouSee").style.visibility = "visible"
 }
 //Yes to Strictly Front
 document.getElementById("strictlyFrontYes").addEventListener("click", strictlyFrontYesList)
+
 function strictlyFrontYesList(){
     document.querySelector(".strictlyFront").style.visibility = "visible"
     document.querySelector("#fullStackYes").style.visibility="hidden"
     document.querySelector(".fullStackFront").style.visibility="hidden"
+    document.querySelector(".likeWhatYouSee").style.visibility = "visible"
     
 }
 
