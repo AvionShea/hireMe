@@ -3,12 +3,17 @@ document.getElementById("displayNone").style.visibility = "hidden"
 
 
 //Yes to the "currently hiring" question
-document.querySelector("#yesHiring").addEventListener("click", yesHiring)
-
+document.getElementById("yesHiring").addEventListener("click", yesHiring)
 function yesHiring(){
     document.querySelector(".software").style.visibility = "visible"
-    document.querySelector(".other").style.visibility = "visible"
+    document.querySelector("#other").style.visibility = "visible"
     document.querySelector("#noHiring").style.visibility = "hidden"
+}
+
+document.getElementById("frontendButtonYes").addEventListener("click", frontendYesHiring)
+function frontendYesHiring(){
+    document.getElementById("backendPosition").style.visibility = "hidden"
+    document.querySelector("#other").style.visibility = "hidden"
 }
 
 //Function that shows the other position option
