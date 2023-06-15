@@ -10,10 +10,28 @@ function yesHiring(){
     document.querySelector("#noHiring").style.visibility = "hidden"
 }
 
+//Yes to frontend hiring
 document.getElementById("frontendButtonYes").addEventListener("click", frontendYesHiring)
 function frontendYesHiring(){
     document.getElementById("backendPosition").style.visibility = "hidden"
     document.querySelector("#other").style.visibility = "hidden"
+    document.querySelector("#fullStackYes").style.visibility = "visible"
+    document.querySelector("#strictlyFrontYes").style.visibility = "visible"
+    document.querySelector(".frontendTitle").style.visibility="visible"
+}
+
+//Yes to full-Stack
+document.getElementById("fullStackYes").addEventListener("click", fullStackYesList)
+function fullStackYesList(){
+    document.querySelector(".fullStackFront").style.visibility="visible"
+    document.querySelector("#strictlyFrontYes").style.visibility = "hidden"
+}
+//Yes to Strictly Front
+document.getElementById("strictlyFrontYes").addEventListener("click", strictlyFrontYesList)
+function strictlyFrontYesList(){
+    document.querySelector("#strictlyFrontYes").style.visibility = "visible"
+    document.querySelector(".fullStackFront").style.visibility="hidden"
+    
 }
 
 //Function that shows the other position option
