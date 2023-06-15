@@ -25,11 +25,13 @@ document.getElementById("fullStackYes").addEventListener("click", fullStackYesLi
 function fullStackYesList(){
     document.querySelector(".fullStackFront").style.visibility="visible"
     document.querySelector("#strictlyFrontYes").style.visibility = "hidden"
+    document.querySelector(".strictlyFront").style.visibility = "hidden"
 }
 //Yes to Strictly Front
 document.getElementById("strictlyFrontYes").addEventListener("click", strictlyFrontYesList)
 function strictlyFrontYesList(){
-    document.querySelector("#strictlyFrontYes").style.visibility = "visible"
+    document.querySelector(".strictlyFront").style.visibility = "visible"
+    document.querySelector("#fullStackYes").style.visibility="hidden"
     document.querySelector(".fullStackFront").style.visibility="hidden"
     
 }
@@ -40,7 +42,12 @@ document.getElementById("otherPositions").addEventListener("click", otherPositio
 function otherPositions(){
     document.getElementById("otherThankYou").innerText = "Thank you for the consideration; however, I'm currently looking to utilize my skills and knowledge in a software engineering position."
     document.querySelector(".software").style.visibility = "hidden"
-    document.querySelector("#yesHiring").style.visibility = "hidden" 
+    document.querySelector("#yesHiring").style.visibility = "hidden"
+    document.querySelector(".fullStackFront").style.visibility="hidden"
+    document.querySelector("#strictlyFrontYes").style.visibility = "hidden"
+    document.querySelector(".strictlyFront").style.visibility = "hidden"
+    document.querySelector(".frontendTitle").style.visibility="hidden"
+    document.querySelector("#fullStackYes").style.visibility="hidden"
 }
 
 //function for "not" currently hiring
