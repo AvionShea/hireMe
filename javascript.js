@@ -63,6 +63,17 @@ function fullStackBackYesList(){
     document.querySelector(".likeWhatYouSee").style.visibility = "visible"
 }
 
+//Yes to Strictly Back
+document.getElementById("strictlyBackYes").addEventListener("click", strictlyBackYesList)
+
+function strictlyBackYesList(){
+    document.querySelector(".strictlyBack").style.visibility = "visible"
+    document.querySelector("#fullStackBackYes").style.visibility="hidden"
+    document.querySelector(".fullStackBack").style.visibility="hidden"
+    document.querySelector(".likeWhatYouSee").style.visibility = "visible"
+    
+}
+
 
 //Function that shows the other position option
 document.getElementById("otherPositions").addEventListener("click", otherPositions)
