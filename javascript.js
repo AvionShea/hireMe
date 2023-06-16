@@ -53,6 +53,16 @@ function backendYesHiring(){
     document.querySelector("#strictlyBackYes").style.visibility = "visible"
 }
 
+//Yes to Back full-stack
+document.getElementById("fullStackBackYes").addEventListener("click", fullStackBackYesList)
+
+function fullStackBackYesList(){
+    document.querySelector(".fullStackBack").style.visibility="visible"
+    document.querySelector("#strictlyBackYes").style.visibility = "hidden"
+    document.querySelector(".strictlyBack").style.visibility = "hidden"
+    document.querySelector(".likeWhatYouSee").style.visibility = "visible"
+}
+
 
 //Function that shows the other position option
 document.getElementById("otherPositions").addEventListener("click", otherPositions)
