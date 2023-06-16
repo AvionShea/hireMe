@@ -42,6 +42,18 @@ function strictlyFrontYesList(){
     
 }
 
+//Yes to backend hiring
+document.getElementById("backendButtonYes").addEventListener("click", backendYesHiring)
+
+function backendYesHiring(){
+    document.getElementById("frontendPosition").style.visibility = "hidden"
+    document.querySelector("#other").style.visibility = "hidden"
+    document.querySelector(".backendTitle").style.visibility="visible"
+    document.querySelector("#fullStackBackYes").style.visibility = "visible"
+    document.querySelector("#strictlyBackYes").style.visibility = "visible"
+}
+
+
 //Function that shows the other position option
 document.getElementById("otherPositions").addEventListener("click", otherPositions)
 
