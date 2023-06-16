@@ -109,3 +109,5 @@ function noHiring(){
         document.getElementById("yesFutureBtn").style.visibility ="hidden"
         document.getElementById("notToday").innerText = "Thank you for viewing. Please feel free to connect with me on LinkedIn should you find yourself in need of a software engineer/developer."}
 }
+
+//Like What you see redirect
