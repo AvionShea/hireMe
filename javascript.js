@@ -1,6 +1,11 @@
 //hides all elements until called
 document.getElementById("displayNone").style.visibility = "hidden"
 
+//like what you see function
+function likeWhatYouSee(){
+    document.querySelector(".likeWhatYouSee").style.visibility = "visible"
+}
+
 
 //Yes to the "currently hiring" question
 document.getElementById("yesHiring").addEventListener("click", yesHiring)
@@ -29,7 +34,7 @@ function fullStackYesList(){
     document.querySelector(".fullStackFront").style.visibility="visible"
     document.querySelector("#strictlyFrontYes").style.visibility = "hidden"
     document.querySelector(".strictlyFront").style.visibility = "hidden"
-    document.querySelector(".likeWhatYouSee").style.visibility = "visible"
+    likeWhatYouSee()
 }
 //Yes to Strictly Front
 document.getElementById("strictlyFrontYes").addEventListener("click", strictlyFrontYesList)
@@ -38,7 +43,7 @@ function strictlyFrontYesList(){
     document.querySelector(".strictlyFront").style.visibility = "visible"
     document.querySelector("#fullStackYes").style.visibility="hidden"
     document.querySelector(".fullStackFront").style.visibility="hidden"
-    document.querySelector(".likeWhatYouSee").style.visibility = "visible"
+    likeWhatYouSee()
     
 }
 
@@ -60,7 +65,7 @@ function fullStackBackYesList(){
     document.querySelector(".fullStackBack").style.visibility="visible"
     document.querySelector("#strictlyBackYes").style.visibility = "hidden"
     document.querySelector(".strictlyBack").style.visibility = "hidden"
-    document.querySelector(".likeWhatYouSee").style.visibility = "visible"
+    likeWhatYouSee()
 }
 
 //Yes to Strictly Back
@@ -70,7 +75,7 @@ function strictlyBackYesList(){
     document.querySelector(".strictlyBack").style.visibility = "visible"
     document.querySelector("#fullStackBackYes").style.visibility="hidden"
     document.querySelector(".fullStackBack").style.visibility="hidden"
-    document.querySelector(".likeWhatYouSee").style.visibility = "visible"
+    likeWhatYouSee()
     
 }
 
