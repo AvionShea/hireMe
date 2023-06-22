@@ -6,6 +6,12 @@ function likeWhatYouSee(){
     document.querySelector(".likeWhatYouSee").style.visibility = "visible"
 }
 
+//start over button
+document.querySelector("#startOverBtn").addEventListener("click", startOver)
+function startOver(){
+    
+}
+
 
 //Yes to the "currently hiring" question
 document.getElementById("yesHiring").addEventListener("click", yesHiring)
