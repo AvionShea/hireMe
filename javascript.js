@@ -4,12 +4,13 @@ document.getElementById("displayNone").style.visibility = "hidden"
 //like what you see function
 function likeWhatYouSee(){
     document.querySelector(".likeWhatYouSee").style.visibility = "visible"
+    document.querySelector("#startOverBtn").style.visibility = "visible"
 }
 
 //start over button
 document.querySelector("#startOverBtn").addEventListener("click", startOver)
 function startOver(){
-    
+    document.querySelector("#startOverBtn").style.visibility = "visible"
 }
 
 
@@ -82,6 +83,7 @@ function strictlyBackYesList(){
     document.querySelector("#fullStackBackYes").style.visibility="hidden"
     document.querySelector(".fullStackBack").style.visibility="hidden"
     likeWhatYouSee()
+    startOver()
     
 }
 
@@ -98,6 +100,7 @@ function otherPositions(){
     document.querySelector(".strictlyFront").style.visibility = "hidden"
     document.querySelector(".frontendTitle").style.visibility="hidden"
     document.querySelector("#fullStackYes").style.visibility="hidden"
+    startOver()
 }
 
 //function for "not" currently hiring
@@ -118,7 +121,9 @@ function noHiring(){
     document.getElementById("noFutureBtn").addEventListener("click", noFutureHiring)
     function noFutureHiring(){
         document.getElementById("yesFutureBtn").style.visibility ="hidden"
-        document.getElementById("notToday").innerText = "Thank you for viewing. Please feel free to connect with me on LinkedIn should you find yourself in need of a software engineer/developer."}
+        document.getElementById("notToday").innerText = "Thank you for viewing. Please feel free to connect with me on LinkedIn should you find yourself in need of a software engineer/developer."
+        startOver()
+    }
 }
 
 //Like What you see redirect
