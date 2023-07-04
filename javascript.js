@@ -5,6 +5,7 @@ document.getElementById("displayNone").style.visibility = "hidden"
 function likeWhatYouSee(){
     document.querySelector(".likeWhatYouSee").style.visibility = "visible"
     document.querySelector("#startOverBtn").style.visibility = "visible"
+    document.getElementById("yesOffer").style.visibility = "hidden"
 }
 
 //start over button
@@ -32,6 +33,7 @@ function frontendYesHiring(){
     document.querySelector("#fullStackYes").style.visibility = "visible"
     document.querySelector("#strictlyFrontYes").style.visibility = "visible"
     document.querySelector(".frontendTitle").style.visibility="visible"
+    document.getElementById("yesOffer").style.visibility = "hidden"
 }
 
 //Yes to full-Stack
@@ -63,6 +65,7 @@ function backendYesHiring(){
     document.querySelector(".backendTitle").style.visibility="visible"
     document.querySelector("#fullStackBackYes").style.visibility = "visible"
     document.querySelector("#strictlyBackYes").style.visibility = "visible"
+    document.getElementById("yesOffer").style.visibility = "hidden"
 }
 
 //Yes to Back full-stack
@@ -100,6 +103,7 @@ function otherPositions(){
     document.querySelector(".strictlyFront").style.visibility = "hidden"
     document.querySelector(".frontendTitle").style.visibility="hidden"
     document.querySelector("#fullStackYes").style.visibility="hidden"
+    document.getElementById("yesOffer").style.visibility = "hidden"
     startOver()
 }
 
@@ -127,5 +131,9 @@ function noHiring(){
 }
 
 //Like What you see redirect
+document.getElementById("yesLike").addEventListener("click", yesLikeSee)
+function yesLikeSee(){
+    document.getElementById("yesOffer").style.visibility = "visible"
+}
 
 //start over btn?
